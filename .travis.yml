@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: rdZCnfC3Kkl8wNxcOvQvR8lF7wPFKiuSSqaa8OkpPqJqykKn8LoNGcL9RK0ulfaOphArzMYxDgeFCQUqgmMIAq6XPICh/YjbtKkZw0X6fNrhLBRW/E+qOPDehCy21iNQsimJINg17NLHh4XLsSvc26T7qVnPJVlNok3i1Gm92vp2cE+4M3cKjY3BMmkAj9c4OUabjYWQRSv2CQrmbovA7m8eIAydFuaWsCXVzdxluGk9clGQU/jCT+EkZMGDyv33Stw2Lg2igmvYiCG/mzuNxDGS7DVf6m8Y6FwZ6T1naPyrHXxSrOEFdbuQgiZFAe5B425BBvHBr38EawU9xSzm7/Jqk+BTbU8nm8NPwUB1ratNzYOWHoXrKuNsujILLpLxoz02nPpnl27p80U7r7+D8eA1Tkfog0QXO5bXjzWW4Q5VQuCOSK/QsrVJf9vu8ADMgcooq8FAFsGas9D9+BqrzeORhMvNJqZZ7VF30DGSHQfZoSY9Mvxsh+Iy6LLerEr/8tvalJI5AIkOWR/7vyLbzvbT4k32KUVOTw36haJ2WLgARb/FGiAcQLzNWVcfAjJOoUsuSiWbI+EYYN/cN4OGc69h87tLc10LYq769EQHyP3idIMTAcfyE39r7gkxfcZkPVD5s0rBapLJpkqGK9Ec00S/SCarH++TP6vaVdz+lgU=
+  app: sheltered-citadel-74340
+  on:
+    repo: jsphkm/react-trello-testing
